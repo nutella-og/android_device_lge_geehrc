@@ -37,6 +37,7 @@ PRODUCT_PACKAGES := \
 
 PRODUCT_PACKAGES += \
         camera.geehrc \
+        Snap \
 	lights.geehrc \
 
 PRODUCT_PACKAGES += \
@@ -149,7 +150,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.audio.fluence.mode=endfire \
 	persist.audio.lowlatency.rec=false
 
-
 # Do not power down SIM card when modem is sent to Low Power Mode.
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.radio.apm_sim_not_pwdn=1
@@ -164,6 +164,10 @@ PRODUCT_PROPERTY_OVERRIDES += persist.hwc.mdpcomp.enable=true
 # Force older camera API.
 PRODUCT_PROPERTY_OVERRIDES += \
 	camera2.portability.force_api=1
+
+#Unbreak videorecording with Snap
+PRODUCT_PROPERTY_OVERRIDES += \
+        persist.camera.cpp.duplication=false
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
