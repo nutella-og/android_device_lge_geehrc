@@ -251,6 +251,10 @@ PRODUCT_PACKAGES += \
 #PRODUCT_PACKAGES += \
 #	power.msm8960
 
+# Gello 
+PRODUCT_PACKAGES += \
+	Gello
+
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	rild.libpath=/system/lib/libril-qc-qmi-1.so
 
