@@ -56,7 +56,7 @@ PRODUCT_COPY_FILES += \
 	device/lge/geehrc/audio_policy.conf:system/etc/audio_policy.conf
 
 PRODUCT_COPY_FILES += \
-        device/lge/geehrc/set_baseband.sh:system/etc/set_baseband.sh
+        device/lge/geehrc/fetch-swv:system/bin/fetch-swv
 
 PRODUCT_COPY_FILES += \
 	device/lge/geehrc/mixer_paths.xml:system/etc/mixer_paths.xml
